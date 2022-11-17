@@ -1,0 +1,330 @@
+:root {
+  --font-color: #181818;
+  --background-color: white;
+  --primary: #0ca597;
+  --secondary: #5cb8e4;
+  --white: #fff;
+}
+
+[data-theme="dark"] {
+  --font-color: #0ca597;
+  --background-color: #181818;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background 0.3s ease-in;
+}
+
+body {
+  display: block;
+  margin: 0;
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  border: 0px solid var(--white);
+  padding: 25px 0px 25px 0px;
+  background-color: var(--primary);
+  width: 100%;
+  z-index: 10;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.container-add {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: max-content;
+}
+
+.addNote {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: max-content;
+}
+
+.addNote p {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.addNote textarea {
+  margin: 10px 0px 10px 0px;
+  background-color: #181818;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 10px;
+}
+
+.sisa-karakter {
+  font-size: 15;
+  margin-bottom: 3px;
+  text-align: end;
+}
+
+.left {
+  display: flex;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 40px;
+  width: 40%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.select-bahasa {
+  padding: 3px;
+  margin-left: 15px;
+}
+
+.arsip {
+  margin: 0px 25px 0px 25px;
+  color: red;
+  text-decoration: none;
+}
+
+.container-btn {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.btn-logout {
+  padding: 8px 20px 8px 20px;
+  border: 2px solid wheat;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.btn-logout:hover {
+  background-color: #00c2e2;
+  color: var(--white);
+}
+
+.btn-tambah {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  cursor: pointer;
+}
+
+.btn-notepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--font-color);
+  color: var(--background-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+  border: 4px solid var(--font-color);
+  border-radius: 15px;
+  position: relative;
+}
+
+.card-list {
+  margin: 10px;
+  position: inherit;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.card-list h3 {
+  margin: 1;
+  color: var(--font-color);
+  text-decoration: underline;
+}
+
+.tgl {
+  margin: 0px 0px 20px 0px;
+  color: grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container-notFoundPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.container-toggle {
+  width: 55px;
+  height: 30px;
+  border-radius: 25px;
+  border: 2px solid #0ca597;
+  background-color: var(--font-color);
+  position: fixed;
+  top: 95px;
+  left: 10px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+}
+
+.wrapper-login {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 100px;
+}
+.wrapper-login h2 {
+  margin-bottom: 25px;
+}
+.wrapper-login span {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container-notepage {
+  width: 75%;
+  margin-top: 100px;
+}
+
+.container-notepage h1 {
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.container-notepage span {
+  color: grey;
+  font-size: 25px;
+}
+
+.body-notepage {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container-btn-notepage {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 110px;
+}
+
+.input-body {
+  height: 25vh;
+  border: 1px solid var(--font-color);
+  margin: 15px 0px 15px 0px;
+  padding: 5px;
+  color: var(--font-color);
+}
+
+.register {
+  display: flex;
+}
+
+.register a {
+  color: var(--primary);
+}
+
+.icon-toggle {
+  width: 20px;
+  height: 20px;
+}
+.btn-toggle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #0ca597;
+  position: absolute;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.container-loading {
+  margin-top: 40vh;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    justify-content: space-around;
+  }
+  .select-bahasa {
+    font-size: 10px;
+    margin-left: 15px;
+    padding: 10px;
+  }
+  .header h1 {
+    font-size: 25px;
+  }
+  .right h3 {
+    display: none;
+  }
+  .btn-logout {
+    font-size: 10px;
+    padding: 10px 15px 10px 15px;
+  }
+  .card {
+    width: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-notepage h1 {
+    font-size: 25px;
+  }
+  .container-notepage p {
+    font-size: 20px;
+  }
+  .addNote {
+    width: 100%;
+  }
+}
